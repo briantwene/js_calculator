@@ -1,0 +1,148 @@
+/* Filename: style.css 
+Author: Brian Twene
+Date:03/08/2021  */
+
+/* remove margin and padding */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* set the font size for whole page */
+html {
+  font-size: 62.5%;
+}
+/* set veiwport */
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+/* center header main and footer areas */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 1, 215, 1) 0%,
+    rgba(0, 104, 255, 1) 100%
+  );
+  font-family: "Poppins", sans-serif;
+}
+/* header settings  */
+header {
+  font-size: 4em;
+  color: white;
+  font-weight: 500;
+  padding: 1em;
+}
+
+/* main settings for the calculator */
+main {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  height: 50vh;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+/* calculator display settings */
+.display {
+  width: 100%;
+  height: 20%;
+  font-size: 3em;
+  padding: 0.5em;
+  color: white;
+  text-align: right;
+}
+
+/* calculator button settings */
+button {
+  width: 25%;
+  height: 20%;
+  align-self: center;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  transition: ease-in-out 300ms;
+}
+/* change the color of button when hovered over  */
+button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* and when clicked on */
+button:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* footer settings */
+footer {
+  padding: 1em;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
+/* keep the color of the link white */
+a,
+a:active,
+a:visited {
+  color: white;
+}
+
+/* make the underline disappear when hovered over */
+/* for indication */
+a:hover {
+  text-decoration: none;
+}
+
+/* CHANGES FOR DIFFERENT VIEWPORT SIZES */
+/* tablets  */
+@media (min-width: 768px) {
+  main {
+    width: 60vw;
+  }
+}
+/* /laptop screens */
+@media (min-width: 992px) {
+  main {
+    width: 50vw;
+  }
+}
+/* desktop screens */
+@media (min-width: 1200px) {
+  main {
+    height: 60vh;
+    width: 40vw;
+  }
+}
+/* 4K screens and up */
+@media (min-width: 2560px) {
+  header {
+    font-size: 7em;
+  }
+  main {
+    height: 60vh;
+    width: 40vw;
+  }
+
+  .display {
+    font-size: 6em;
+  }
+  button {
+    font-size: 4em;
+  }
+
+  footer {
+    font-size: 4em;
+  }
+}
