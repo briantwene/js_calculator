@@ -4,7 +4,7 @@ This project is a calculator made using JavaScript.
 [link](https://bt521.github.io/js_calculator/)
 
 <p align="center">
-<img scr="" alt="">
+<img src="https://media.giphy.com/media/tlp41yjqar3zIKrGmx/giphy.gif" alt="calculator demo">
 </p>
 
 ## Features
