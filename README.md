@@ -12,7 +12,7 @@ This project is a calculator made using JavaScript.
 - Able to do basic arithmetic
 - Clear button feature
 
-###Languages:
+### Languages:
 
 **Made in:**
 
